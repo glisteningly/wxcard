@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>秦保成 启天医星</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="http://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="app">
+  <div class="card bg-blue">
+    <div id="cardheader" class="bg-blue">
+      <img id="logo" src="./images/logo.png" alt="logo">
+    </div>
+    <div id="profile">
+      <div id="Avatar">
+        <img src="./images/qinbc.png" alt="头像" id="AvatarImage">
+      </div>
+      <div id="name"><span>{{ profile.name }}</span></div>
+      <div id="position"><span>{{ profile.position }}</span></div>
+      <ul id="info">
+        <li id="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>{{ profile.phone }}</span></li>
+        <li id="qqnum"><i class="fa fa-qq" aria-hidden="true"></i><span>{{ profile.qqnum }}</span></li>
+        <li id="wechat"><i class="fa fa-wechat" aria-hidden="true"></i><span>{{ profile.wechat }}</span></li>
+        <li id="mail"><i class="fa fa-envelope" aria-hidden="true"></i><span>{{ profile.mail }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="cardtitle bg-blue">
+      <h3><i class="fa fa-external-link" aria-hidden="true"></i> 产品推介 <span>| PRODUCT</span></h3>
+    </div>
+    <div class="serv">
+      <div class="conent">
+        <ul class="pdtlist">
+          <li><a href="http://mp.weixin.qq.com/s/KNvgbYOWmtWqIMG3hWOVLA">医院综合管理信息平台<span class="arrow">▶</span></a></li>
+          <li><a href="http://mp.weixin.qq.com/s/W9iG1v3om0dTffTZHnf3LA">医院办公HOA系统<span class="arrow">▶</span></a></li>
+          <li><a href="http://mp.weixin.qq.com/s/ifePsGFbmtu3bKbJvW7YDQ">医务资源管理系统<span class="arrow">▶</span></a></li>
+          <li><a href="http://mp.weixin.qq.com/s/MbVhWJ6CeF9Av9BoB1-k0Q">院领导BI决策分析系统<span class="arrow">▶</span></a>
+          </li>
+          <li><a href="http://mp.weixin.qq.com/s/wrVQwwDCk34EQueP8Y2yPg">医疗不良事件管理系统<span class="arrow">▶</span></a></li>
+          <li><a href="http://mp.weixin.qq.com/s/gXzNshIBs8Bzzouk0E3i7Q">危急值管理系统<span class="arrow">▶</span></a></li>
+          <li><a href="http://mp.weixin.qq.com/s/zeMd_8zll8z9I5bDqchwmA">医院智能排班系统<span class="arrow">▶</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="serv first">
+      <h3><i class="fa fa-user-circle-o" aria-hidden="true"></i> 免费服务 <span>| FREE</span></h3>
+      <div class="conent">
+        <p>医院信息化建设整体解决方案——免费咨询</p>
+      </div>
+    </div>
+    <div class="serv">
+      <h3><i class="fa fa-users" aria-hidden="true"></i> 专业服务 <span>| PROFESSIONAL</span></h3>
+      <div class="conent">
+        <h4>► 业务类</h4>
+        <p>医院HIS系统建设、LIS、PACS等；</p>
+        <h4>► 管理类</h4>
+        <p class="list col2">▪医院专版HOA系统</br>▪综合管理信息平台</br>▪智能排班系统</br>
+          ▪医务资源管理系统</br>▪自助影像打印系统</br>▪BI分析决策系统</br>▪智慧网络医院</p>
+        <h4>► 等级评审类</h4>
+        <p class="list col2">▪不良事件管理系统</br>▪病案示踪系统</br>▪危急值管理系统</br>
+          ▪重点病人安全预警系统</br>▪健康体检信息管理系统</br>▪数字化病案管理系统</br>▪合理用药审查系统</br>
+          ▪病案示踪管理系统</br>▪分级诊疗信息管理系统 (双向转诊 远程会诊)</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="serv">
+      <h3><i class="fa fa-handshake-o" aria-hidden="true"></i> 私人服务 <span>| PERSONAL</span></h3>
+      <div class="conent">
+        <h4>► 管理类</h4>
+        <p class="list">▪机场免费接送服务</br>▪车站免费接送服务</br>▪子女在西安上学看望服务</br>
+          ▪西安境内亲友导游服务</br>▪西安市内亲友实物代办服务</br>▪其它更多服务......</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.staticfile.org/vue/2.2.6/vue.min.js"></script>
+<script src="https://cdn.staticfile.org/axios/0.15.3/axios.min.js"></script>
+<script>
+    profile = {
+        name: "秦宝成",
+        position: "市场总监",
+        phone: "13912345679",
+        qqnum: "828846572",
+        wechat: "weixin12345",
+        mail: "qinbaocheng@sxqtyx.com"
+    }
+    var app = new Vue({
+        el: '#app',
+        data: {
+            profile: profile,
+        }
+    })
+</script>
+</body>
+</html>

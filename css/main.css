@@ -1,0 +1,212 @@
+body {
+    background: #f8f8f8;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.card {
+    /*height: 500px;*/
+    margin: 10px;
+    background: white;
+    box-shadow: 2px 2px 8px #CCC;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.cardtitle {
+    height: 3rem;
+}
+
+.bg-blue {
+    background: #2EA7E0;
+}
+
+.cardtitle h3 {
+    color: white;
+    padding: 1rem;
+}
+
+.cardtitle h3 span {
+    color: #EEEEEE;
+    font-size: 0.6rem;
+}
+
+.cardtitle h3 i {
+    font-size: 0.8rem;
+}
+
+#cardheader {
+    text-align: right;
+    width: 100%;
+    height: 4rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+img#logo {
+    margin: 0.5rem;
+    max-height: 3rem;
+}
+
+#profile {
+    height: 8rem;
+    background: #002E45;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+div#Avatar {
+    width: 4rem;
+    height: 4rem;
+    padding: 2px;
+    background: #ececec;
+    border-radius: 4rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+
+    position: relative;
+    top: -2.1rem;
+    left: 1.5rem;
+    box-shadow: 1px 1px 3px #000;
+}
+
+img#AvatarImage {
+    width: 4rem;
+    height: 4rem;
+    line-height: 0; /* remove line-height */
+    display: inline-block; /* circle wraps image */
+    border-radius: 50%; /* relative value */
+    transition: linear 0.25s;
+}
+
+div#name {
+    font-size: 1.3rem;
+    color: white;
+    width: 4rem;
+    position: relative;
+    text-align: center;
+    top: -1.5rem;
+    left: 1.6rem;
+}
+
+div#position {
+    font-size: 0.8rem;
+    color: #AAA;
+    width: 6rem;
+    position: relative;
+    text-align: center;
+    top: -1.2rem;
+    left: 0.6rem;
+}
+
+ul#info {
+    color: white;
+    position: relative;
+    left: 7.5rem;
+    bottom: 5rem;
+    font-size: 0.9rem;
+
+}
+
+ul#info li {
+    padding: 3px;
+}
+
+ul#info i.fa {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+li#phone {
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.serv {
+    padding: 0.85rem;
+}
+
+.serv.first {
+    border-bottom: 1px solid #DDD;
+}
+
+.serv h3 {
+    color: #2EA7E0;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.serv h4 {
+    color: #002E45;
+    font-size: 1rem;
+    margin: 0.3rem;
+    padding-top: 0.4rem;
+}
+
+.serv h3 span {
+    color: #AAAAAA;
+    font-size: 0.6rem;
+}
+
+.serv h3 i {
+    font-size: 0.8rem;
+}
+
+.serv p {
+    margin: 0.4rem;
+    color: #666;
+    line-height: 1.3rem;
+}
+
+p.indent2 {
+    text-indent: 1.7rem;
+    font-size: 0.9rem;
+}
+
+.serv p.list {
+    margin: 0.1rem;
+    line-height: 1.3rem;
+    font-size: 0.85rem;
+}
+
+.col2 {
+    columns: 2;
+}
+
+.conent .imgcontainer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.conent img {
+    max-width: 100%;
+}
+
+ul.pdtlist {
+    color: #666;
+    font-size: 1rem;
+}
+
+ul.pdtlist li {
+    width: 90%;
+    padding: 1rem;
+    border-top: 1px solid #DDD;
+}
+
+ul.pdtlist li:first-child {
+    border-top: none;
+}
+
+ul.pdtlist li a {
+    color: #2EA7E0;
+    text-decoration: none;
+}
+
+ul.pdtlist li span.arrow {
+    float: right;
+    font-size: 0.6rem;
+    color: #2EA7E0;
+    padding-top: 0.2rem;
+}
