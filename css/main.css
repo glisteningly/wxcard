@@ -1,3 +1,7 @@
+[v-cloak] {
+    display: none;
+}
+
 body {
     background: #f8f8f8;
     max-width: 32rem;
@@ -158,11 +162,11 @@ li#phone {
     margin: 0.4rem;
     color: #666;
     line-height: 1.3rem;
+    font-size: 0.9rem;
 }
 
 p.indent2 {
     text-indent: 1.7rem;
-    font-size: 0.9rem;
 }
 
 .serv p.list {
@@ -209,4 +213,45 @@ ul.pdtlist li span.arrow {
     font-size: 0.6rem;
     color: #2EA7E0;
     padding-top: 0.2rem;
+}
+
+#qrcbtn{
+    z-index: 999;
+    width: 3rem;
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 5.7rem;
+    float: right;
+}
+
+#qrcbtn a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 2rem;
+}
+#qrcbtn a span{
+    font-size: 1rem;
+    margin-left: 0.2rem;
+}
+
+
+#qrcodeimg{
+    text-align: center;
+    padding: 1rem;
+}
+
+#qrcodeimg img{
+    max-width: 60%;
+}
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-active {
+    transform: translateY(-20px);
+    opacity: 0;
 }
